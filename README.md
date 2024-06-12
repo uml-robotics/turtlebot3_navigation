@@ -78,14 +78,14 @@ Starting Turtlebot3:
 ```
 in a new terminal: ssh turtlebot@<\ip-address-of-robot>
 export TURTLEBOT3_MODEL=burger
-export ROS_DOMAIN_ID=<\ID_NUM>
+export ROS_DOMAIN_ID=<ID_NUM>
 ros2 launch turtlebot3_bringup robot.launch.py
 ```
 
 - On your primary PC (not ssh'd into the turtlebot) in a new terminal:
 ```
 export TURTLEBOT3_MODEL=burger
-export ROS_DOMAIN_ID=<\ID_NUM>
+export ROS_DOMAIN_ID=<ID_NUM>
 ```
 
 Creating a map:
@@ -98,7 +98,7 @@ ros2 launch turtlebot3_cartographer cartographer.launch.py
 - On your primary PC (not ssh'd into the turtlebot) in a another new terminal:
 ```
 export TURTLEBOT3_MODEL=burger
-export ROS_DOMAIN_ID=<\ID_NUM>
+export ROS_DOMAIN_ID=<ID_NUM>
 ros2 run turtlebot3_teleop teleop_keyboard
 ```
 
@@ -111,6 +111,9 @@ Note that the final argument is a directory, you can choose to save the file in 
 Experiment with examining the map and cleaning up edges if necessary in an image editor software.
 
 # Additional Resources
+[Nav2 Documentation](https://docs.nav2.org/getting_started/index.html)
+[Navigation2 Github repository](https://github.com/ros-navigation/navigation2/blob/main/README.md)
+- Contains all of the Nav2 packages and instructions for setup and usage if you need to look deeper into any component.
 
 # Assignment
 
