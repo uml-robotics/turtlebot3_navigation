@@ -19,7 +19,12 @@ The `turtlebot3_navigation` package provides some package structure and code tem
 
 ## Setup
 
-First install ROS2 at the following link:
+First install colcon common files
+```
+sudo apt install python3-colcon-common-extensions
+```
+
+Install ROS2 at the following link:
 [ROS2 Humble Installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
 
 Complete the steps in the link above, making sure to install the **desktop** versionof ROS2, and not the base version so that we install GUI utilities on our primary machines. 
