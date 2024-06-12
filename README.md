@@ -63,7 +63,7 @@ sudo apt install ros-humble-turtlebot3
 Install ssh
 ```
 sudo apt install ssh
-'''
+```
 
 ## Usage
 Each turtlebot needs a unique `ROS_DOMAIN_ID` specified so that it can properly communicate with the intended machine, you do not need to look into this further for now but we will use two tested values for the turtlebots. In order to communicate with the robot via a host PC, the PC and robot need to have the same `ROS_DOMAIN_ID` environment variable. Instructions on how to perform this action are detailed below.
