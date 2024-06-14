@@ -19,7 +19,7 @@ def generate_launch_description():
     nav2_yaml = os.path.join(get_package_share_directory(
         'turtlebot3_navigation'), 'config', 'amcl_config.yaml')
     map_file = os.path.join(get_package_share_directory(
-        'turtlebot3_navigation'), 'maps', 'DAN409_bf.yaml')
+        'turtlebot3_navigation'), 'maps', 'DAN409_bf_filter.yaml')
     rviz_config_file_path = os.path.join(get_package_share_directory(
         'turtlebot3_navigation'), 'rviz_config', 'pathplanning.rviz')
     waypoint_follower_yaml = os.path.join(get_package_share_directory(
@@ -77,7 +77,7 @@ def generate_launch_description():
             name='rviz2_node',
             parameters=[{'use_sim_time': False}],
             arguments=['-d', rviz_config_file_path]),
-            
+
         Node(
             package='nav2_waypoint_follower',
             executable='waypoint_follower',
